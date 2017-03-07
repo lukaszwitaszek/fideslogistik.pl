@@ -7,15 +7,13 @@
 
 
 // Instantiate the Bootstrap carousel
-// http://codepen.io/mephysto/pen/ZYVKRY
+// http://jsfiddle.net/paulalexandru/at606jpe/
 
-$('.multi-item-carousel').carousel({
-  interval: false
-});
+$('#myCarousel').carousel({
+  interval: 10000
+})
 
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
+$('.carousel .item').each(function(){
   var next = $(this).next();
   if (!next.length) {
     next = $(this).siblings(':first');
@@ -24,7 +22,8 @@ $('.multi-item-carousel .item').each(function(){
   
   if (next.next().length>0) {
     next.next().children(':first-child').clone().appendTo($(this));
-  } else {
+  }
+  else {
   	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
   }
 });
