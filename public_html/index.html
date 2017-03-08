@@ -20,6 +20,9 @@
     <!-- lightSlider CSS -->
     <link href="css/lightslider.css" rel="stylesheet">	
 
+	<!-- bootstrap-modal external lib -->
+	 <link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet">
+	 <link href="css/bootstrap-modal.css" rel="stylesheet"> 
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -98,12 +101,82 @@
 				<div class="box">
 					<div class="col-lg-12 text-center">
 					
+						<h1 class="brand-name">Nasze usługi</h1>
 						<h2 class="brand-before">
-							<small>w tym chcemy być najlepsi</small>
+							<i><small>w tym <b>jesteśmy</b> najlepsi</small></i>
 						</h2>
-						<!--<h1 class="brand-name"></h1> -->
 						<hr class="tagline-divider">
 						
+						<!-- opis głównych usług z wykorzystaniem zewnętrznej biblioteki do bootstrap-modal -->
+						<div class="row">
+							<!-- opisy wstępne z linkami do wyzwalania właściwych modali -->
+							<div class="col-lg-4 text-center">
+								<h3>Usługi transportowe</h3>
+								<img class="img-responsive" src="img/transport.jpg" alt="">
+								<h4 class="text-left">Specjalizujemy się w  transporcie krajowym jak również międzynarodowym. Posiadamy bogate doświadczenie w przewozie żywności oraz środków chemicznych.</h4>
+								<a class="text-right" data-toggle="modal" data-target="#transport" href="#transport">	więcej</a>
+							</div>
+							
+							<div class="col-lg-4 text-center">
+								<h3>Przewóz kontenerów</h3>
+								<img class="img-responsive" src="img/kontenery.jpg" alt="">
+								<h4 class="text-left">Współpracujemy z przewoźnikami specjalizującymi się w przewozie różnych form ładunków, w szczególności przewożących kontenery.</h4>
+								<a class="text-right" data-toggle="modal" href="#kontenery">więcej</a>
+							</div>
+							
+							<div class="col-lg-4 text-center">
+								<h3>Usługi magazynowe</h3>
+								<img class="img-responsive" src="img/magazyn.jpg" alt="">
+								<h4 class="text-left">Dysponujemy własnym magazynem wysokiego składowania (w dogodnej lokalizacji u zbiegu autostrad A1 i A2).</h4>
+								<a class="text-right" data-toggle="modal" href="#magazyn">więcej</a>
+							</div>
+							<!-- /opisy wstępne -->	
+						</div>
+						
+						<!-- zawartość modali -->
+							<div id="transport" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+								<div class="modal-header">
+									<h3>Transport</h3>
+								</div>
+								<div class="modal-body">
+									<h5>Aqqq
+									</h5>
+								</div>
+								<div class="modal-footer">
+									<button type="button" data-dismiss="modal" class="btn">Zamknij</button>
+								</div>
+							</div>
+							
+							<div id="kontenery" class="modal fade" tabindex="-1" data-width="760"  style="display: none;">
+								<div class="modal-header">
+									<h3>Kontenery</h3>
+								</div>
+								<div class="modal-body">
+									<h5>Bqqq
+									</h5>
+								</div>
+								<div class="modal-footer">
+									<button type="button" data-dismiss="modal" class="btn">Zamknij</button>
+								</div>
+							</div>
+							
+							<div id="magazyn" class="modal fade" tabindex="-1" data-width="760"  style="display: none;">
+								<div class="modal-header">
+									<h3>Magazyn</h3>
+								</div>
+								<div class="modal-body">
+									<h5>Cqqq
+									</h5>
+								</div>
+								<div class="modal-footer">
+									<button type="button" data-dismiss="modal" class="btn">Zamknij</button>
+								</div>
+							</div>
+							
+							<!-- /zawartość modali -->	
+						
+						<!-- /opis usług-->
+
 						
 						<hr class="tagline-divider">
 						<h2 class="brand-before">
@@ -152,8 +225,10 @@
 		<!-- /.container -->
     </div>
     <!-- /.content-section-a -->
-
 	
+	    
+	
+							
 	
     <div class="content-section-b">
 
@@ -271,6 +346,11 @@
 		});
 	</script>
 	
+	<!-- bootstrap-modal external lib-->
+	<script src="js/bootstrap-modalmanager.js "></script>
+	<script src="js/bootstrap-modal.js"></script> 
+	
+
 	
 </body>
 
