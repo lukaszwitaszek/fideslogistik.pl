@@ -15,7 +15,26 @@
 }
 
 .content-section-b-small {
-    padding: 15px 0;
+    padding: 5px 0;
     border-top: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
+}
+
+.topnav {
+    font-size: 20px; 
+	padding: 2px 0;
+}
+
+.topnav a {
+    font-size: 20px; 
+	padding: 15px 0;
+	margin-left: 0;
+}
+
+.modal-init-header {
+	padding-bottom:  20px;
+}
+
+a {
+	font-size: 18px;
 }
