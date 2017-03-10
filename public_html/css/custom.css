@@ -5,12 +5,14 @@
  */
 
 body {
+    background-color: rgba(248,248,248,0.0);    
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .full {
+
     background: url('../img/full-bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -34,12 +36,6 @@ body {
     float: center;
     width: auto;
     border-top: 3px solid #e7e7e7;
-}
-
-.content-section-b-small {
-    padding: 5px 0;
-    border-top: 2px solid #e7e7e7;
-    border-bottom: 2px solid #e7e7e7;
 }
 
 .topnav {

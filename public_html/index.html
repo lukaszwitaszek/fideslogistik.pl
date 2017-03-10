@@ -41,7 +41,7 @@
 </head>
 
 <body>
-    <!-- Nawigacja -->
+    <!-- nawigacja -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Nawigacja i logo dla małej rozdzielczości -->
@@ -70,9 +70,9 @@
             </div>
         </div>
     </nav>
-    <!-- /Nawigacja -->
+    <!-- /nawigacja -->
 
-    <!-- Nagłówek -->
+    <!-- nagłówek -->
     
     <div class="intro-header">
         <div class="container">
@@ -89,16 +89,7 @@
             </div>
         </div>
     </div>
-    <!-- /Nagłówek -->
-
-	<!-- odcięcie nagłówka -->
-	<div class="content-section-b-small">
-        <div class="container">
-            <div class="row">
-			</div>
-		</div>
-	</div>
-	<!-- /odcięcie nagłówka -->
+    <!-- /nagłówek -->
 	
 	<!-- usługi -->
 	<a  name="services"></a>
@@ -335,20 +326,25 @@
     <!-- lightSlider JavaScript -->
     <script src="js/lightslider.js"></script>	
 	<script type="text/javascript">
+
 		$(document).ready(function() {
 		$("#lightSlider").lightSlider(); 
-		
-
-		
 		});
 		
-		$("#historia-collapse").on('show.bs.collapse', function(){
+		$("#historia-collapse").on('shown.bs.collapse', function(){
 			$("#show_history_collapse").text("mniej");
 		});
 		
 		$("#historia-collapse").on('hidden.bs.collapse', function(){
 			$("#show_history_collapse").text("więcej");
 		});
+
+		$("div.content-section-a").mouseenter(function(){
+			$(this).fadeTo("fast", 1.3);
+		});
+		$("div.content-section-a").mouseleave(function(){
+			$(this).fadeTo( "fast", 1.0 );
+		});	
 		
 		
 	</script>
