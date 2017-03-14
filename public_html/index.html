@@ -329,6 +329,9 @@
 
 		$(document).ready(function() {
 		$("#lightSlider").lightSlider(); 
+		$("div.content-section-a").fadeTo("fast", 0.85);
+		$("div.content-section-b").fadeTo("fast", 0.85);
+		
 		});
 		
 		$("#historia-collapse").on('shown.bs.collapse', function(){
@@ -340,10 +343,16 @@
 		});
 
 		$("div.content-section-a").mouseenter(function(){
-			$(this).fadeTo("fast", 1.3);
+			$(this).fadeTo("fast", 1.0);
+		});
+		$("div.content-section-b").mouseenter(function(){
+			$(this).fadeTo("fast", 1.0);
 		});
 		$("div.content-section-a").mouseleave(function(){
-			$(this).fadeTo( "fast", 1.0 );
+			$(this).fadeTo( "fast", 0.85 );
+		});
+		$("div.content-section-b").mouseleave(function(){
+			$(this).fadeTo( "fast", 0.85 );
 		});	
 		
 		
