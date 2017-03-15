@@ -14,7 +14,7 @@ body {
 .full {
 
     background: url('../img/full-bg.jpg') no-repeat center center fixed;
-	background-color: rgba(248,248,248,1.0);
+	/*background-color: rgba(248,248,248,1.0);*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

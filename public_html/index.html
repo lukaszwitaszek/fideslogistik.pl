@@ -95,7 +95,7 @@
 	<a  name="services"></a>
     <div class="content-section-a">
         <div class="container">	
-			<div class="row">
+			<div class="row" id="services-row">
 				<div class="box">
 					<div class="col-lg-12 text-center">
 					
@@ -229,7 +229,7 @@
 	<a  name="about"></a>
     <div class="content-section-b">
         <div class="container">	
-			<div class="row">
+			<div class="row" id="about-row">
 				<div class="box">
 					<div class="col-lg-6 col-sm-6">
 						<!-- <hr class="section-heading-spacer">
@@ -263,10 +263,8 @@
 	<!-- kontakt -->
 	<a  name="contact"></a>
     <div class="banner">
-
         <div class="container">
-
-            <div class="row">
+            <div class="row" id="contact-row">
                 <div class="col-lg-6">
                     <h2>Dołącz do nas:</h2>
                 </div>
@@ -326,11 +324,14 @@
     <!-- lightSlider JavaScript -->
     <script src="js/lightslider.js"></script>	
 	<script type="text/javascript">
-
+		
+		var initialFade=0.9;
+		var hoverFade=1.0;
+		
 		$(document).ready(function() {
 		$("#lightSlider").lightSlider(); 
-		$("div.content-section-a").fadeTo("fast", 0.85);
-		$("div.content-section-b").fadeTo("fast", 0.85);
+		$("div.content-section-a").fadeTo("fast", initialFade);
+		$("div.content-section-b").fadeTo("fast", initialFade);
 		
 		});
 		
@@ -343,16 +344,16 @@
 		});
 
 		$("div.content-section-a").mouseenter(function(){
-			$(this).fadeTo("fast", 1.0);
+			$(this).fadeTo("fast", hoverFade);
 		});
 		$("div.content-section-b").mouseenter(function(){
-			$(this).fadeTo("fast", 1.0);
+			$(this).fadeTo("fast", hoverFade);
 		});
 		$("div.content-section-a").mouseleave(function(){
-			$(this).fadeTo( "fast", 0.85 );
+			$(this).fadeTo( "fast", initialFade );
 		});
 		$("div.content-section-b").mouseleave(function(){
-			$(this).fadeTo( "fast", 0.85 );
+			$(this).fadeTo( "fast", initialFade );
 		});	
 		
 		
