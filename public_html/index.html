@@ -41,8 +41,26 @@
 </head>
 
 <body>
+
+	<!-- nagłówek -->    
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="intro-message">
+                        <h1>FIDES Spedycja</h1>
+                        <h2>Skuteczność ponad wszystko</h2>
+                        <hr class="intro-divider">
+						<h3>www.fideslogistik.pl</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /nagłówek -->
+	
     <!-- nawigacja -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-default topnav" data-spy="affix" data-offset-top="550" role="navigation">
         <div class="container topnav">
             <!-- Nawigacja i logo dla małej rozdzielczości -->
             <div class="navbar-header">
@@ -72,24 +90,7 @@
     </nav>
     <!-- /nawigacja -->
 
-    <!-- nagłówek -->
     
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="intro-message">
-                        <h1>FIDES Spedycja</h1>
-                        <h2>Skuteczność ponad wszystko</h2>
-                        <hr class="intro-divider">
-						<h3>www.fideslogistik.pl</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /nagłówek -->
 	
 	<!-- usługi -->
 	<a  name="services"></a>
@@ -342,7 +343,6 @@
 		$("#historia-collapse").on('hidden.bs.collapse', function(){
 			$("#show_history_collapse").text("więcej");
 		});
-
 		$("div.content-section-a").mouseenter(function(){
 			$(this).fadeTo("fast", hoverFade);
 		});

@@ -5,7 +5,7 @@
  */
 
 body {
-    background-color: rgba(248,248,248,0.0);   
+    background-color: rgba(255,255,255,1.0);   
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -13,8 +13,8 @@ body {
 
 .full {
 
-    background: url('../img/full-bg.jpg') no-repeat center center fixed;
-	/*background-color: rgba(248,248,248,1.0);*/
+    /*background: url('../img/full-bg.jpg') no-repeat center center fixed;*/
+	background-color: rgba(248,248,248,1.0);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -22,11 +22,25 @@ body {
 }
 
 
-
 /*
- * £ukasz Witaszek
+ * Lukasz Witaszek
  * Copyright 2017 web.witaszki.pl
  */
+ 
+.affix {
+      top: 0;
+      width: 100%;
+	  opacity:0.9;
+	  z-index:10;
+}
+
+.intro-header{
+	
+	height:500px;
+	background: url(../img/intro-bg.jpg) no-repeat center center; 
+	background-size: cover;
+	background-color: rgba(100,100,100,0.1);
+	}
  
 .img-responsive {
 	margin-left: auto;
@@ -37,6 +51,10 @@ body {
     float: center;
     width: auto;
     border-top: 3px solid #e7e7e7;
+}
+
+.navbar{
+	margin-bottom: 0px;
 }
 
 .topnav {
