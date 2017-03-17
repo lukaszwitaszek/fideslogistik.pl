@@ -14,8 +14,9 @@ body {
 
 .full {
 
-    /*background: url('../img/full-bg.jpg') no-repeat center center fixed;*/
-	background-color: #F2DDBC;
+    /*background: url('../img/full-bg.jpg') no-repeat center center fixed;
+	background-color: #F2DDBC;*/
+	background-color: #FFFFF;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -78,7 +79,7 @@ body {
 }
 
 .topnav a {
-    font-size: 20px; 
+    font-size: 28px; 
     font-weight: normal;
     color: rgb(253,176,109) !important;
 	padding: 15px 0;
@@ -96,4 +97,21 @@ body {
 
 a {
 	font-size: 18px;
+	color:#FFB800 !important;
+	/*color: rgb(253,176,109) !important;*/
+}
+
+a:hover {
+	color: #FF7C00 !important;
+	color:red;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+    background-color: #FF7C00;
+}
+
+.lSAction > a {
+    top: 90%;
+    z-index: 9;
+
 }
