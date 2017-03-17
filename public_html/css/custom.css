@@ -5,7 +5,8 @@
  */
 
 body {
-    background-color: rgba(255,255,255,1.0);   
+    /*color: #365FB7 !important;
+    background-color: rgba(255,255,255,0.8);  */ 
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -14,7 +15,7 @@ body {
 .full {
 
     /*background: url('../img/full-bg.jpg') no-repeat center center fixed;*/
-	background-color: rgba(248,248,248,1.0);
+	background-color: #F2DDBC;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -32,15 +33,21 @@ body {
       width: 100%;
 	  opacity:0.9;
 	  z-index:10;
+      margin-top: 0px;
 }
 
 .intro-header{
-	
-	height:500px;
-	background: url(../img/intro-bg.jpg) no-repeat center center; 
-	background-size: cover;
-	background-color: rgba(100,100,100,0.1);
+	height:400px;
+	background: url(../img/intro-bg.jpg) no-repeat 70% center; 
+	background-size: contain;
+	background-color: #999ca1;
 	}
+
+.intro-message > h2 {
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    font-weight: normal;
+}
  
 .img-responsive {
 	margin-left: auto;
@@ -55,17 +62,22 @@ body {
 
 .navbar{
 	margin-bottom: 0px;
+    background-color: rgba(153,156,161,0.1);
 }
 
 .topnav {
-    font-size: 20px; 
+ /*   font-size: 20px;
+    color: #365FB7 ; */
 	padding: 2px 0;
 }
 
 .topnav a {
     font-size: 20px; 
+    font-weight: normal;
+    color: rgb(253,176,109) !important;
 	padding: 15px 0;
-	margin-left: 0;
+	margin-left: 15px !important;
+
 }
 
 .modal-init-header {
