@@ -7,7 +7,7 @@
 body {
     /*color: #365FB7 !important;
     background-color: rgba(255,255,255,0.8);  */ 
-    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    margin-top:    0px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
@@ -81,14 +81,15 @@ body {
 .topnav a {
     font-size: 28px; 
     font-weight: normal;
-    color: rgb(253,176,109) !important;
+    color: rgb(71,44,27) !important;
 	padding: 15px 0;
 	margin-left: 15px !important;
 
 }
 
 .topnav a:hover {
-	color: #FF7C00 !important;
+	/*color: rgb(43,27,16) !important;*/
+    color: rgb(0,0,0) !important; /*rgb(43,27,16)*/ 
 }
 
 .modal-init-header {
@@ -97,12 +98,12 @@ body {
 
 a {
 	font-size: 18px;
-	color:#FFB800 !important;
+	color:rgb(153,74,0) !important;
 	/*color: rgb(253,176,109) !important;*/
 }
 
 a:hover {
-	color: #FF7C00 !important;
+	color: rgb(71,35,0)!important;
 	color:red;
 }
 
@@ -117,5 +118,14 @@ a:hover {
 }
 
 .banner {
-	color:#FFB800 !important;
+    height:350px;
+    padding: 100px 0;
+    color:#4F1B00!important;
+    background-color: #999ca1 !important;
+    
+    background: url(../img/banner-bg.jpg) no-repeat 35% center; 
+    background-size: contain;
 }
+
+
+
