@@ -38,7 +38,7 @@ body {
 }
 
 .affix + .content-section-a {
-	/* padding-top: 70px !important;  */
+	/*padding-top: 50px !important;  */
 }
 
 .intro-header{
@@ -107,12 +107,18 @@ a:hover {
 	color:red;
 }
 
+
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
     background-color: #FF7C00;
+    z-index: 9;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {
+    z-index: 9;
 }
 
 .lSAction > a {
-    top: 90%;
+    top: 85%;
     z-index: 9;
 
 }
@@ -124,7 +130,7 @@ a:hover {
     background-color: #999ca1 !important;
     
     background: url(../img/banner-bg.jpg) no-repeat 35% center; 
-    background-size: contain;
+    background-size: 70%;
 }
 
 
