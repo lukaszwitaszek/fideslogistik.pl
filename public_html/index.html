@@ -264,37 +264,63 @@
 	</div>
     <!-- /misja -->
 
-	<!-- kontakt -->
+	<!-- kontakt 
 	<a  name="contact"></a>
     <div class="banner">
         <div class="container">
             <div class="row" id="contact-row">
-                <div class="col-lg-4">
-                
-                </div>
-                <div class="col-lg-8">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
+                <div class="col-lg-offset-4 col-lg-8">
+                    <div class="list-inline banner-social-buttons">
+                        <p>
                             <a href="#contact" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">telefon</span></a>
 							<h4>+48 123 456 789</h4>
 							<h4>+48 987 654 321</h4>
-                        </li>
-                        <br />
-                        <li>
+                        </p>
+                        
+                        </p>
                             <a href="" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">email</span></a>
 							<h4>biuro@fideslogistik.pl</h4>
 							<h4>spedycja@fideslogistik.pl</h4>
-                        </li>
-                        <li>
+                        </p>
+                        <p>
                             <a href="" class="btn btn-default btn-lg"><i class="fa fa-map-marker fa-fw"></i> <span class="network-name">mapa</span></a>
 							<h4>Biuro:<br />Puszkina 80<br/>92-516 Łódź <br/> 1p., lokal 10<h4>
-                        </li>
-                    </ul>                  
+                        </p>
+                    </div>                  
                 </div>
             </div>
         </div>
     </div>
     <!-- /kontakt -->
+	<a  name="contact"></a>
+    <div class="banner">
+        <div class="container">
+            <div class="row" id="contact-row">
+                <div class="col-lg-offset-4 col-lg-8 col-md-offset-4 col-md-8">
+                    <div class="banner-social-buttons">
+                        	<div class="row">
+                        		<div class="col-lg-7 col-md-7">
+                            		<a href="#contact" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">telefon</span></a>
+									<h4>+48 123 456 789</h4>
+									<h4>+48 987 654 321</h4>
+									<hr class="tagline-divider">
+                            		<a href="#contact" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">email</span></a>
+									<h4>biuro@fideslogistik.pl</h4>
+									<h4>spedycja@fideslogistik.pl</h4>
+                        		</div>
+                        		<div class="col-lg-5 col-md-5">           
+                            		<a href="#contact" class="btn btn-default btn-lg"><i class="fa fa-map-marker fa-fw"></i> <span class="network-name">mapa</span></a>
+									<h4>Biuro:<br />Puszkina 80<br/>92-516 Łódź <br/> 1p., lokal 10<h4>
+                        		</div>
+                        	</div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- stopka -->
     <footer>
@@ -335,13 +361,10 @@
     <script src="js/lightslider.js"></script>	
 	<script type="text/javascript">
 		
-		var initialFade=1.0;
-		var hoverFade=1.0;
+
 		
 		$(document).ready(function() {
 		$("#lightSlider").lightSlider(); 
-		$("div.content-section-a").fadeTo("fast", initialFade);
-		$("div.content-section-b").fadeTo("fast", initialFade);
 		
 		});
 		
@@ -352,20 +375,7 @@
 		$("#historia-collapse").on('hidden.bs.collapse', function(){
 			$("#show_history_collapse").text("więcej");
 		});
-		$("div.content-section-a").mouseenter(function(){
-			$(this).fadeTo("fast", hoverFade);
-		});
-		$("div.content-section-b").mouseenter(function(){
-			$(this).fadeTo("fast", hoverFade);
-		});
-		$("div.content-section-a").mouseleave(function(){
-			$(this).fadeTo( "fast", initialFade );
-		});
-		$("div.content-section-b").mouseleave(function(){
-			$(this).fadeTo( "fast", initialFade );
-		});	
-		
-		
+
 	</script>
 	
 	<!-- bootstrap-modal external lib-->

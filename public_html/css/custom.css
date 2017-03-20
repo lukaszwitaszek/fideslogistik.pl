@@ -123,15 +123,32 @@ a:hover {
 
 }
 
+.banner-container{
+    background-color: #999ca1 !important;
+}
+
 .banner {
     height:350px;
-    padding: 100px 0;
+    padding: 30px 0;
     color:#4F1B00!important;
     background-color: #999ca1 !important;
     
-    background: url(../img/banner-bg.jpg) no-repeat 35% center; 
-    background-size: 70%;
+    background: url(../img/banner-bg.jpg) no-repeat 32% center; 
+    background-size: contain;
 }
 
+.modal-header {
+    color:#4F1B00;
+    background-color: #999ca1;
+}
+
+.modal-footer {
+    color:#4F1B00;
+    background-color: #999ca1;
+}
+
+.modal-body {
+    background-color: rgba(153,156,161,0.8);
+}
 
 
