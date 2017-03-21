@@ -95,15 +95,13 @@
 	
 	<!-- usługi -->
 	<a name="services"></a>
-    <div class="content-section-a">
-	
+    <div class="content-section-a">	
         <div class="container">	
 			<div class="row" id="services-row">
 				<div class="box">
 					<div class="col-lg-12 text-center">
 					
-					<!--	<h2 class="brand-before">Nasze usługi - <i>w tym <u>jesteśmy najlepsi</u></i></h2>
-		
+					<!--	<h2 class="brand-before">Nasze usługi - <i>w tym <u>jesteśmy najlepsi</u></i></h2>		
 						<hr class="tagline-divider"> -->
 						
 						<!-- opis głównych usług z wykorzystaniem zewnętrznej biblioteki do bootstrap-modal -->
@@ -176,8 +174,7 @@
 								</div>
 							</div>
 							
-							<!-- /zawartość modali -->	
-						
+							<!-- /zawartość modali -->			
 						<!-- /opis usług-->
 
 						
@@ -241,8 +238,7 @@
 						<h2 class="section-heading">Nasza misja - <i>historia i cel</i></h2>
 						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eum voluptate a quae repellendus quis vero recusandae nesciunt inventore expedita magnam animi atque molestiae ipsa itaque possimus beatae. Placeat, alias.</p>
 						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, eum voluptate a quae repellendus quis vero recusandae nesciunt inventore expedita magnam animi atque molestiae ipsa itaque possimus beatae. Placeat, alias.</h4>
-						
-						
+										
 						<div id="link_div"><a  id="show_history_collapse" data-toggle="collapse" href="#historia-collapse" aria-expanded="false" aria-controls="collapseExample">więcej</a></div>
 						<!-- dodatkowe informacje podane z wykorzystaniem collapse -->
 						<div class="collapse" id="historia-collapse">
@@ -264,34 +260,7 @@
 	</div>
     <!-- /misja -->
 
-	<!-- kontakt 
-	<a  name="contact"></a>
-    <div class="banner">
-        <div class="container">
-            <div class="row" id="contact-row">
-                <div class="col-lg-offset-4 col-lg-8">
-                    <div class="list-inline banner-social-buttons">
-                        <p>
-                            <a href="#contact" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">telefon</span></a>
-							<h4>+48 123 456 789</h4>
-							<h4>+48 987 654 321</h4>
-                        </p>
-                        
-                        </p>
-                            <a href="" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">email</span></a>
-							<h4>biuro@fideslogistik.pl</h4>
-							<h4>spedycja@fideslogistik.pl</h4>
-                        </p>
-                        <p>
-                            <a href="" class="btn btn-default btn-lg"><i class="fa fa-map-marker fa-fw"></i> <span class="network-name">mapa</span></a>
-							<h4>Biuro:<br />Puszkina 80<br/>92-516 Łódź <br/> 1p., lokal 10<h4>
-                        </p>
-                    </div>                  
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /kontakt -->
+	<!-- kontakt -->
 	<a  name="contact"></a>
     <div class="banner">
         <div class="container">
@@ -309,7 +278,7 @@
 									<h4>spedycja@fideslogistik.pl</h4>
                         		</div>
                         		<div class="col-lg-5 col-md-5">           
-                            		<a href="#contact" class="btn btn-default btn-lg"><i class="fa fa-map-marker fa-fw"></i> <span class="network-name">mapa</span></a>
+                            		<a class="btn btn-default btn-lg" data-toggle="modal" href="#mapa-modal"><i class="fa fa-map-marker fa-fw"></i> <span class="network-name">mapa</span></a>
 									<h4>Biuro:<br />Puszkina 80<br/>92-516 Łódź <br/> 1p., lokal 10<h4>
                         		</div>
                         	</div>
@@ -318,10 +287,25 @@
             </div>
         </div>
     </div>
+	
+	<!-- modal z mapą -->
+	<div id="mapa-modal" class="modal fade" tabindex="-1" data-width="760"  style="display: none;">
+		<div class="modal-header">
+			<h3>Mapa - gdzie jesteśmy</h3>
+		</div>
+		<div class="modal-body">
+			<div id="mapa"></div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" data-dismiss="modal" class="btn">Zamknij</button>
+		</div>
+	</div>
+	<!-- /modal -->
+	
+    <!-- /kontakt -->
 
 
-
-
+	
     <!-- stopka -->
     <footer>
         <div class="container">
@@ -359,10 +343,13 @@
 
     <!-- lightSlider JavaScript -->
     <script src="js/lightslider.js"></script>	
+	
+	<!-- GoogleMaps JavaScript -->
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/map.js"></script>	
+	
 	<script type="text/javascript">
-		
-
-		
+			
 		$(document).ready(function() {
 		$("#lightSlider").lightSlider(); 
 		
@@ -375,7 +362,11 @@
 		$("#historia-collapse").on('hidden.bs.collapse', function(){
 			$("#show_history_collapse").text("więcej");
 		});
-
+		
+		$("#mapa-modal").on('shown.bs.collapse', function(){
+			loadMap();
+		});
+		
 	</script>
 	
 	<!-- bootstrap-modal external lib-->
